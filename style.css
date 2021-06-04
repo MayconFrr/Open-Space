@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.space {
+    background: url("assets/img/space.png") fixed repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planet-area {
+    position: relative;
+}
+
+.planet {
+    height: 100vh;
+    position: relative;
+    left: -3px;
+    bottom: -3px;
+    z-index: 1;
+}
+
+.rocket {
+    transform: rotate(20deg);
+    height: 35vh;
+    position: absolute;
+    top: 15vh;
+    left: 35vh;
+}
+
+.control-panel {
+    background-color: black;
+    background-image: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            yellow 35px,
+            yellow 70px
+    );
+    padding: 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.control-panel__inner {
+    background: #1F1F1F;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-panel__inner > div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.levers input {
+    -webkit-appearance: slider-vertical;
+    width: 80px;
+}
+
+#psw {
+    background: #1F1F1F;
+    margin-bottom: 0;
+    padding: 0.35em;
+    border: solid 1px yellow;
+    border-radius: 5px;
+    color: white;
+}
+
+#psw-btn {
+    background: yellow;
+    margin-top: 0;
+    padding: 0 0.5em;
+    border-radius: 5px;
+}
+
+#launch-btn {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 1em;
+    font-size: 2em;
+    align-self: center;
+}
